@@ -4,10 +4,10 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
-      -name: runLint
-      run: echo "run Lint"
-      -name: test
-      run: echo "test"
-      -name: Deploy
-      run: echo "deploy"
+      - name: runLint
+        run: echo "run Lint"
+      - name: test
+        run: echo "test"
+      - name: Deploy
+        run: echo "deploy"
        
