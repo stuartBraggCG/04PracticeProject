@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: runLint
-        run: echo "run Lint"
+        run: Lint
       - name: test
         run: echo "test"
       - name: Deploy
