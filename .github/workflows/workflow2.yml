@@ -1,0 +1,17 @@
+name: Second Workflow
+on: 
+  issues:
+    types: [opened, edited, closed]
+jobs:
+  issue1-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Output event details
+        run: echo "event"
+        #//"Event details: ${{ toJson(github.event) }}"
+
+
+
+
+
+       
