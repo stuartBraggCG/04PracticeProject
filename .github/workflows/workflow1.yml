@@ -4,10 +4,12 @@ jobs:
   first-job:
     runs-on: ubuntu-latest
     steps:
+      - name: Get code
+        uses: actions/checkout@v3
       - name: runLint
-        run: Lint
+        run: npm run lint
       - name: test
-        run: echo "test"
+        run: npm run test
       - name: Deploy
         run: echo "deploy"
        
